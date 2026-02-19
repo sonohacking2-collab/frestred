@@ -1,0 +1,51 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0b0b0b;color:#fff}
+.click-all{text-decoration:none;color:inherit}
+
+/* TOP BAR */
+.topbar{
+  position:fixed;top:0;left:0;right:0;
+  height:50px;background:#111;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  padding:0 15px;z-index:1000;
+}
+.logo{color:#1e90ff;font-weight:bold}
+.menu span{margin-left:15px;font-size:14px;padding:4px 8px;border-radius:4px}
+
+/* PLAYER */
+.player{margin-top:60px;position:relative;max-width:900px;margin-left:auto;margin-right:auto}
+.thumb{width:100%;border-radius:6px}
+.live-badge{position:absolute;top:10px;left:10px;background:red;padding:4px 8px;font-size:12px;border-radius:3px}
+.viewer{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.6);padding:4px 8px;font-size:12px;border-radius:3px}
+.play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;background:rgba(0,0,0,.6);border-radius:12px}
+.play-icon:after{content:"";position:absolute;left:28px;top:20px;border-style:solid;border-width:15px 0 15px 25px;border-color:transparent transparent transparent white}
+
+/* SERVERS */
+.servers{display:flex;justify-content:center;gap:10px;margin:15px}
+.srv{padding:8px 14px;border:none;color:#fff;border-radius:4px}
+.s1{background:#1e90ff}
+.s2{background:#6a5acd}
+.hd{background:#2e8b57}
+.fhd{background:#ff8c00}
+
+/* RATING */
+.rating{text-align:center;margin:10px 0}
+.stars{color:#f5c542;font-size:18px}
+
+/* LOGO STRIP */
+.logo-strip{display:flex;gap:15px;overflow-x:auto;padding:15px}
+.logo-box{text-align:center;min-width:90px}
+.logo-box img{width:70px;height:70px;object-fit:contain}
+.logo-box p{font-size:12px}
+
+/* MATCH INFO */
+.match-info{background:#111;margin:15px;padding:10px;border-radius:6px;font-size:14px}
+
+/* CHANNEL LIST */
+.channel-list{margin:15px}
+.channel{display:flex;align-items:center;background:#111;padding:10px;margin-bottom:10px;border-radius:6px}
+.channel img{width:50px;height:50px;margin-right:10px}
+.ch-name{font-size:14px}
+.ch-lang{font-size:12px;opacity:.7}
+.ch-live{margin-left:auto;color:red;font-size:12px}
